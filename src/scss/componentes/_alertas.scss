@@ -1,0 +1,21 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.mensaje {
+    padding: v.$separacion / 5;
+    margin-bottom: v.$separacion / 4;
+    border-radius: .7rem;
+    display: block;
+    text-align: center;
+    font-weight: v.$bold;
+
+
+    &.error {
+        background-color: v.$crimson;
+        box-shadow: 0px 0px 3px 1px v.$rojo;
+    }
+
+    &.exito {
+        background-color: v.$verde;
+    }
+}

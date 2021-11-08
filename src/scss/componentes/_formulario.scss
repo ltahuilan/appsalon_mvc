@@ -1,0 +1,35 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.formulario {
+    width: 95%;
+    margin: 0 auto;
+
+    @include m.desktop {
+        width: 90%;
+    }
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-top: calc(v.$separacion / 2);
+ 
+    label {
+        flex: 0 0 10rem;
+    }
+
+    input {
+        flex: 1;
+        padding: calc(v.$separacion / 4);
+        border-radius: .7rem;
+        border: none;
+        
+        &:focus {
+            // border: .3rem solid v.$azul;
+            outline: none;
+            box-shadow: 0px 0px 2px 2px v.$azul;
+            
+        }
+    }
+}

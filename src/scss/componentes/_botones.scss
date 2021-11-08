@@ -1,0 +1,6 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.boton {
+    @include m.boton(v.$azul, v.$blanco);
+}
